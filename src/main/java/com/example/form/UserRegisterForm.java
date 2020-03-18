@@ -4,7 +4,7 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
-public class UserRepositoryForm {
+public class UserRegisterForm {
 
 	/** 名前 */
 	@NotBlank(message = "お名前を入力して下さい")

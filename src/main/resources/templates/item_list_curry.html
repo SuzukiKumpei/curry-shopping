@@ -80,7 +80,7 @@
 					<tbody>
 						<tr th:each="itemList:${listOfItemList}">
 							<th th:each="item :${itemList}">
-								<a href="item_detail.html">
+								<a href="item_detail.html" th:href="@{'/item-detail?id=' + ${item.id}}">
 									<img src="../static/img_curry/1.jpg" th:src="${'/img_curry/' + item.imagePath}"
 										class="img-responsive img-rounded" width="200" height="600">
 								</a><br>

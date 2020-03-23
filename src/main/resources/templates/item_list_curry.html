@@ -79,7 +79,6 @@
 				<table class="table table-striped">
 					<tbody>
 						<tr th:each="itemList:${listOfItemList}">
-
 							<th th:each="item :${itemList}">
 								<a href="item_detail.html">
 									<img src="../static/img_curry/1.jpg" th:src="${'/img_curry/' + item.imagePath}"

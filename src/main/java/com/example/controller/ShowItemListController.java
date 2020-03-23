@@ -21,8 +21,7 @@ public class ShowItemListController {
 	@RequestMapping("")
 	public String showList(Model model) {
 		List<Item> itemList = showItemListService.showList();
-		//model.addAttribute("itemList", itemList);
-		//System.out.println(itemList);
+		
 		
 		List<List<Item>> listOfItemList = getThreeItemList(itemList);
 		model.addAttribute("listOfItemList", listOfItemList);
